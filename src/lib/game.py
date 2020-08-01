@@ -12,7 +12,7 @@ class Game:
                 btn = self.gui.grid.field[row][col]
                 btn["command"] = lambda row=row, col=col: self.click(row, col)
 
-    def click(self, row, col) -> None:
+    def click(self, row: int, col: int) -> None:
         if self.field[row][col]["text"] == "":
             self.field[row][col]["text"] = self.current_sym
             winner = self.check_win(self.current_sym)

@@ -20,7 +20,7 @@ class Grid:
                 line.append(button)
             self.field.append(line)
 
-    def disable_field(self, winner) -> None:
+    def disable_field(self, winner: str) -> None:
         for row in range(3):
             for col in range(3):
                 if self.field[row][col]["text"] != winner:

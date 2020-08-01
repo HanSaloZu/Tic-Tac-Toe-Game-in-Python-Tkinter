@@ -2,7 +2,7 @@ from lib.gui import Gui
 from lib.game import Game
 
 
-def main():
+def main() -> None:
     gui = Gui(title="Tic-Tac-Toe")
     game = Game(gui=gui)
     game.run()
