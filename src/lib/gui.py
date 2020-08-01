@@ -22,5 +22,6 @@ class Gui:
             activebackground="#171717",
             activeforeground="#FFF",
             bd=0,
+            command=lambda: self.grid.clear_field()
         )
         restart_button.grid(row=3, column=0, columnspan=3, sticky="nsew")

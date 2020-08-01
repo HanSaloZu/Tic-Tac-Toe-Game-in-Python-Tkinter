@@ -1,4 +1,4 @@
-from tkinter import Button, DISABLED
+from tkinter import Button, DISABLED, NORMAL
 
 
 class Grid:
@@ -25,3 +25,10 @@ class Grid:
             for col in range(3):
                 if self.field[row][col]["text"] != winner:
                     self.field[row][col]["state"] = DISABLED
+
+    def clear_field(self) -> None:
+        for row in range(3):
+            for col in range(3):
+                self.field[row][col]["text"] = ""
+                self.field[row][col]["state"] = NORMAL
+                self.field[row][col]["bg"] = "#000"
