@@ -15,7 +15,7 @@ class Grid:
                                 activebackground="#171717",
                                 fg="#FFF",
                                 activeforeground="#FFF",
-                                bd=0)
+                                bd=1)
                 button.grid(row=row, column=col, sticky="nsew")
                 line.append(button)
             self.field.append(line)
